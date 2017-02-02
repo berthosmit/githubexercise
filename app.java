@@ -2,9 +2,13 @@ public class app {
 
 	public static void main (String args[]); {
 	System.out.println("app.main");
-	// dit is een test
+	// doDtuff();
 	}
-	private static void doStuff(){
-		System.out.println("app.doStuff");
+	private static void doStuff(String caller){
+		System.out.println("app.doStuff" + caller);
+	
+}
+	private static void featureZ(){
+		doStuff (featureZ);
 }
 }
